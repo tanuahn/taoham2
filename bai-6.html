@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var nguyenAm = ["u", "e", "o", "a", "i", "U", "E", "O", "A", "I"];
+    var nhap = prompt("nhap chu cai tu A - Z");
+
+    function kiemtranguyenam() {
+        var check = false;
+        for (i = 0; i < nguyenAm.length; i++) {
+            if (nhap === nguyenAm[i]) {
+                check = true;
+                // break;
+            }
+        }
+        if (check == false) {
+            alert(nhap + " : khong la nguyen am")
+        } else {
+            alert(nhap + " : la nguyen am")
+        }
+
+    }
+    kiemtranguyenam()
+</script>
+</body>
+</html>

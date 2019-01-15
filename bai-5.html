@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var number = [];
+
+    for (i = 0; i < 3; i++) {
+        var input = parseInt(prompt('Input 3 so'));
+        number.push(input);
+    }
+    var min = number[0];
+    for (i = 1; i < number.length; i++) {
+        if (number[i] < min) {
+            min = number[i]
+        }
+    }
+    alert(min);
+</script>
+</body>
+</html>
